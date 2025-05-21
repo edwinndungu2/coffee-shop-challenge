@@ -1,5 +1,5 @@
 from customer import Customer
-from Coffee import Coffee
+from coffee import Coffee
 
 if __name__ == "__main__":
     c = Customer("Ed")
