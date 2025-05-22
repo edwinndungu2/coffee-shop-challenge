@@ -15,7 +15,7 @@ class Coffee:
         return self._orders
 
     def customers(self):
-        # unique customers who ordered this coffee
+        
         return list({order.customer for order in self._orders})
 
     def num_orders(self):
@@ -27,6 +27,6 @@ class Coffee:
         total = sum(order.price for order in self._orders)
         return total / len(self._orders)
 
-    # internal method to add order
+    
     def _add_order(self, order):
         self._orders.append(order)
